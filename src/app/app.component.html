@@ -1,1 +1,23 @@
-<h1>{{title}} </h1>
+<h1 [innerHTML]="title"> </h1>
+
+<img [src]="imageUrl" alt="logo" width="100">
+
+<h3 [ngClass]="classe">ceci est une application</h3>
+
+<button [disabled]="bouton">un bouton</button>
+
+<button (click)="cliquer()">Cliquer</button>
+
+<table>
+  <th>Nom</th>
+  <th>Prenom</th>
+  
+  <button (click)="afficherPlus()" >afficher plus</button>
+  <span *ngIf="afficherPlus()"></span>
+  <ng-template #v >
+    <th >email</th>
+    <th>Telephone</th>
+    <th>Age</th>
+  </ng-template>
+
+</table>
