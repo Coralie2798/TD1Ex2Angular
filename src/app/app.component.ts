@@ -22,8 +22,15 @@ bouton:boolean=true;
     {"nom":"Durand","prenom":"Sophie","email":"sd@mail.fr","telephone":"0202030405","age":28}
   ]
 
-  afficherPlus(){
-    var ap:boolean=true;
-    return ap;
+  detailBouton:boolean=true;
+ 
+  cacherDetails():void{
+    // if (this.detailBouton)
+    // {
+    //   this.detailBouton=false;
+    // }else{
+    //   this.detailBouton=true;
+    // }
+    this.detailBouton=!this.detailBouton
   }
 }
