@@ -33,4 +33,16 @@ bouton:boolean=true;
     // }
     this.detailBouton=!this.detailBouton
   }
+
+  msg:string="";
+
+  oUtil:{nom:string, prenom:string,email:string,telephone:string,age:number}=
+  {"nom":"test", "prenom":"test","email":"test@test.fr","telephone":"test","age":25};
+
+  ajout:boolean=true;
+
+  ajouterU():void{
+    this.oUtil.nom=this.msg;
+    this.utilisateurs.push(this.oUtil);
+  }
 }

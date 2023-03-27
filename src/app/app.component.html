@@ -26,5 +26,14 @@
     <td *ngIf="detailBouton">{{u.telephone}}</td>
     <td *ngIf="detailBouton">{{u.age}}</td>
   </tr>
-
 </table>
+
+
+<br><br>
+<textarea name="msg" id="msg" cols="50" rows="5" [(ngModel)]="msg"></textarea>
+
+
+<p> {{msg}} </p>
+<br><br>
+
+<button (click)="ajouterU()">add</button>
